@@ -1,0 +1,132 @@
+
+*{
+  margin:0px;
+  padding:0px;
+  font-family: avenir-medium;
+}
+html {
+  scroll-behavior: smooth;
+}
+html,body{
+  overflow-x: hidden;
+}
+@font-face {
+  font-family: avenir-medium;
+  src: url('../fonts/avenir_medium.otf');
+}
+@font-face{
+  font-family: fugaz;
+  src:url('../fonts/FugazOne-Regular.ttf');
+}
+.transition-element{
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.hide-element{
+  opacity: 0;
+}
+
+.nav-text{
+  font-family: fugaz;
+}
+.logo-img{
+  min-height: 70px !important;
+}
+
+#showcase{
+  background: url('/assets/img/chocolate1.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+@keyframes animateBg{
+  from { background-size: 100%; }
+  to { background-size: 300%; }
+}
+#tagline-div{
+  padding-top:240px;
+}
+#tagline-text{
+  font-family:fugaz;
+  color:white;
+  font-size:80px;
+}
+#explore-div{
+  padding-top:60px;
+}
+
+#exploreText{
+  font-family: fugaz;
+}
+.content-container{
+  padding-bottom: 45px;
+  padding-top:45px;
+}
+.fa{
+  color:white;
+}
+.pimg1,.pimg2,.pimg3,.pimg4{
+  position:relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.pimg1{
+  background-image: url('../img/wrapperchoc.jpg');
+  min-height: 400px;
+}
+.pimg2{
+  background-image: url('../img/darkchoc.jpg');
+  min-height: 400px;
+}
+.pimg3{
+  background-image: url('../img/whitechoc.jpg');
+  min-height: 400px;
+}
+.pimg4{
+  background-image: url('../img/heartchoc.jpg');
+  min-height: 400px;
+}
+.about-heading{
+  padding-bottom: 40px;
+}
+#formSection{
+  background-color: grey;
+}
+#buttonText{
+  font-family: avenir-medium;
+}
+.hr{
+  margin:0px 0px 5px;
+}
+.title-margin{
+  margin:0px 0px 5px !important;
+}
+.footer-heading{
+  padding-bottom: 40px;
+}
+.footer-text{
+  font-size: 16px;
+}
+@media only screen and (min-width:870px){
+  #showcase{
+     animation: animateBg 120s infinite alternate ease-in;
+  }
+}
+@media only screen and (max-width:768px){
+  .logo-img{
+    min-height: 45px !important;
+  }
+  .is-horizontal-center{
+    justify-content: center;
+  }
+}
+  @media only screen and (max-width:467px){
+
+}
